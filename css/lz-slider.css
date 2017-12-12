@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.lz-container-slides {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.lz-wrapper {
+    position: relative;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.lz-slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.lz-slides img {
+    display: block;
+}
+
+.lz-pagination {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.lz-pagination span {
+    display: inline-block;
+    width: 10px;
+    margin-right: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+    fill-opacity: 0.5;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.lz-pagination span.active {
+    background: #000;
+    fill-opacity: 1;
+    opacity: 1;
+}

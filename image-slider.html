@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>slides</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="./css/lz-slider.css">
+
+
+    <div class="lz-container-slides" id="box">
+        <!--轮播list-->
+        <div class="lz-wrapper">
+            <div class="lz-slides">
+                <img src="./img/gallery/980x380/001.jpg" />
+            </div>
+            <div class="lz-slides">
+                <img src="./img/gallery/980x380/002.jpg" />
+            </div>
+            <div class="lz-slides">
+                <img src="./img/gallery/980x380/003.jpg" />
+            </div>
+            <div class="lz-slides">
+                <img src="./img/gallery/980x380/004.jpg" />
+            </div>
+            <div class="lz-slides">
+                <img src="./img/gallery/980x380/005.jpg" />
+            </div>
+        </div>
+        <!--轮播按钮-->
+        <div class="lz-pagination"></div>
+    </div>
+    <script src="js/lz-slider.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            //初始化
+            var aaa = new LzSlides({
+                el: 'box',
+                autoplay: 4000,
+                speed: 300,
+            });
+        }
+    </script>
+</body>
+
+</html>
